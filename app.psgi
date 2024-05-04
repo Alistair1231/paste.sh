@@ -193,9 +193,9 @@ sub dispatch_request {
 
     my $ct = $req->header('Content-Type');
     my $type = "v1";
-    if (defined $ct && $ct =~ m{^text/vnd\.paste\.sh-v2\s*(;.*|$)}) {
+    if (defined $ct && $ct =~ m{^text/vnd\.paste\.qaaq\.cc-v2\s*(;.*|$)}) {
       $type = "v2";
-    } elsif (defined $ct && $ct =~ m{^text/vnd\.paste\.sh-v3\s*(;.*|$)}) {
+    } elsif (defined $ct && $ct =~ m{^text/vnd\.paste\.qaaq\.cc-v3\s*(;.*|$)}) {
       $type = "v3";
     }
 
